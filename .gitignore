@@ -1,0 +1,10 @@
+# created by virtualenv automatically
+venv/bin
+.env
+.venv
+env/
+venv/
+
+main.py
+
+test_rsa.key
