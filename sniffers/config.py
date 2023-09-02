@@ -6,5 +6,4 @@ import os
 
 load_dotenv()
 
-USERNAME = os.environ.get('USERNAME')
-PASSWORD = os.environ.get('PASSWORD')
+HOST = os.environ.get('IP')
