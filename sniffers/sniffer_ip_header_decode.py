@@ -6,6 +6,10 @@ import sys
 from config import HOST
 
 
+#  sudo venv/bin/python sniffers/sniffer.py  FOR RUN CODE
+# AND FOR EXAMPLE 'ping google.com' IN NEW TERMINAL
+
+
 class IP:
 
     def __init__(self, buff=None):
