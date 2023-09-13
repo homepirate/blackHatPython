@@ -11,3 +11,5 @@ test_rsa.key
 
 /network_takeover_scapy/pcap/pictures
 network_takeover_scapy/pcap/faces
+/web_hacking/wordpress
+web_hacking/SVNDigger

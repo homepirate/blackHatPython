@@ -6,6 +6,9 @@ FACES = 'faces'
 TRAINS = 'training'
 
 
+# you must create 2 dir 'pictures' and 'faces'. In 'pictures' put some img with faces
+
+
 def detect(srcdir=ROOT, tgtdir=FACES, train_dir=TRAINS):
     for file in os.listdir(srcdir):
         if not file.upper().endswith('.JPG'):
